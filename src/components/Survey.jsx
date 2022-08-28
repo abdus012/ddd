@@ -6,7 +6,7 @@ import "./Survey.css";
 const Survey = ({ Count }) => {
   var items = [];
   axios
-    .get("https://seq-backend-postgres.herokuapp.com/pushNewUserInSleepApp")
+    .get("https://seq-backend-postgres.herokuapp.com/getNewUserInSleepApp")
     .then(function (response) {
       // console.log(response);
       items = [...response.data];
